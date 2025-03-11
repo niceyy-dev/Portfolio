@@ -4,20 +4,22 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
+import { ClassProps } from "@/app/type";
 
 const navigation = [
-  { name: "project", href: "#", current: false },
+  { name: "projects", href: "/projects", current: false },
   { name: "about", href: "/about", current: false },
-  { name: "contact", href: "#", current: false },
+  { name: "contact", href: "/contact", current: false },
 ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Header() {
+export default function Header({ className }: ClassProps) {
   return (
-    <div>
+    <div className={className}>
       <Disclosure>
         <div className="fixed top-0 w-full bg-transparent backdrop-blur-sm z-50">
           <div className="header-title mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -40,10 +42,10 @@ export default function Header() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex shrink-0 items-center space-x-20">
                   <div className="flex flex-col items-end ml-auto">
-                    <a href="">
-                      <p>AN</p>
-                      <p>ZH</p>
-                    </a>
+                    <Link href="/">
+                      <p className="pl-10 pt-8">AN</p>
+                      <p className="pl-10 pb-8">ZH</p>
+                    </Link>
                   </div>
                 </div>
               </div>
