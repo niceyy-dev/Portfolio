@@ -61,6 +61,10 @@
   font-family: "Safira March";
 }
 
+.font-anonymous-regular {
+  font-family: "Anonymous Pro Regular";
+}
+
 :root {
   --background: #edede9;
   --foreground: #171717;
@@ -83,13 +87,10 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Copperplate Gothic 31 AB", "Safira March", "Anonymous Pro",
-    Helvetica, sans-serif;
+  font-family: "Copperplate Gothic 31 AB", "Safira March",
+    "Anonymous Pro Regular", Helvetica, sans-serif;
 }
-/* Dans globals.css ou un fichier CSS spécifique au Header */
-/* header {
-  font-family: "Copperplate Gothic 31 AB", sans-serif;
-} */
+/* HOME PAGE */
 .header-title {
   font-size: 16px;
 }
@@ -118,3 +119,12 @@ body {
 .home-content {
   position: relative;
 }
+
+/* ABOUT PAGE */
+.about-title {
+  font-size: 100px;
+}
+.font-content {
+  font-size: 15px;
+}
+/*  */
