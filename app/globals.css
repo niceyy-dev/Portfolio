@@ -144,6 +144,8 @@ body {
   font-size: 50px;
   font-weight: bold;
 }
+
+/* Animations */
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -190,7 +192,7 @@ body {
   animation: fadeInUp 1s ease-out forwards;
 }
 
-/* Animation lors du chargement des inputs */
+/* Animation lors du chargement des inputs (fadeInInput) */
 @keyframes fadeInInput {
   0% {
     opacity: 0;
@@ -221,4 +223,9 @@ body {
 .input-focus:focus {
   animation: focusInput 0.3s ease-out forwards;
   outline: none;
+}
+
+/* Utilisation de l'animation fadeInUp sur le formulaire */
+.form-animate {
+  animation: fadeInUp 1s ease-out forwards;
 }

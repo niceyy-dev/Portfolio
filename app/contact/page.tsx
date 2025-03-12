@@ -25,8 +25,8 @@ export default function Contact() {
     <div className="min-h-screen flex flex-col items-center justify-center px-8 sm:px-20 bg-custom py-12 relative">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-7xl items-center">
         {/* Left: Text Content */}
-        <div className="flex flex-col gap-6 text-lg leading-relaxed font-montserrat sm:px-6">
-          <h1 className="text-4xl font-bold mb-4 contact-title">
+        <div className="flex flex-col gap-6 text-lg leading-relaxed font-montserrat sm:px-6 animate-fadeInLeft">
+          <h1 className="text-4xl font-bold mb-4 contact-title ">
             Let's chat!
             <br /> Tell me about your project.
           </h1>
@@ -45,13 +45,13 @@ export default function Contact() {
         </div>
 
         {/* Right: Form */}
-        <div className="flex justify-center sm:justify-start font-montserrat">
+        <div className="flex justify-center sm:justify-start font-montserrat animate-fadeInRight">
           <form
             onSubmit={handleSubmit}
             className="w-full max-w-lg bg-[#E3D5CA] bg-opacity-70 backdrop-blur-sm p-8 rounded-lg shadow-lg space-y-6"
           >
             {/* Name Field */}
-            <div>
+            <div className="relative animate-fadeInUp">
               <label
                 htmlFor="name"
                 className="block text-lg font-semibold mb-2 text-gray-700"
@@ -65,13 +65,13 @@ export default function Contact() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className="w-full p-3 border-b border-gray-400 focus:outline-none focus:ring-0 focus:border-[#D5BDAF] bg-transparent input-animate input-focus"
+                className="w-full p-3 border-b border-gray-400 focus:outline-none focus:ring-0 focus:border-[#D5BDAF] bg-transparent input-animate input-focus "
                 placeholder="Your Name"
               />
             </div>
 
             {/* Email Field */}
-            <div>
+            <div className="relative animate-fadeInUp">
               <label
                 htmlFor="email"
                 className="block text-lg font-semibold mb-2 text-gray-700"
@@ -91,7 +91,7 @@ export default function Contact() {
             </div>
 
             {/* Message Field */}
-            <div>
+            <div className="relative animate-fadeInUp">
               <label
                 htmlFor="message"
                 className="block text-lg font-semibold mb-2 text-gray-700"
@@ -111,7 +111,7 @@ export default function Contact() {
             </div>
 
             {/* Submit Button */}
-            <div className="flex justify-center">
+            <div className="flex justify-center animate-fadeInUp">
               <button
                 type="submit"
                 className="w-full bg-[#EDEDE9] text-gray-600 p-3 rounded-md font-semibold hover:bg-[#C0A789] transition-colors"
