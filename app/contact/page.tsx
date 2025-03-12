@@ -1,17 +1,16 @@
 "use client";
 import React, { useState } from "react";
-import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/navigation";
 import emailjs from "@emailjs/browser";
-
+import { Bounce, ToastContainer, toast } from "react-toastify"; // Import de Toastify
+import { EnvelopeIcon } from "@heroicons/react/24/outline";
 export default function Contact() {
   const [formData, setFormData] = useState({
-    from_name: "",
-    from_email: "",
+    name: "",
+    email: "",
     subject: "",
     message: "",
   });
-  const [status, setStatus] = useState("");
   const router = useRouter();
 
   const handleChange = (
@@ -28,20 +27,36 @@ export default function Contact() {
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
         formData,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string // Utiliser PUBLIC_KEY et non USER_ID
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
       )
       .then(() => {
-        setStatus("Message envoyé avec succès !");
-        setFormData({
-          from_name: "",
-          from_email: "",
-          subject: "",
-          message: "",
-        });
+        toast(
+          "📨 Thank you for reaching out! I’ll get back to you as soon as possible.",
+          {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+          }
+        );
+
+        setFormData({ name: "", email: "", subject: "", message: "" });
       })
-      .catch((error) => {
-        console.error("EmailJS Error:", error);
-        setStatus("Erreur lors de l'envoi.");
+      .catch(() => {
+        toast.error("Error sending message.", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       });
   };
 
@@ -77,16 +92,16 @@ export default function Contact() {
             {/* Name Field */}
             <div className="relative animate-fadeInUp">
               <label
-                htmlFor="from_name"
+                htmlFor="name"
                 className="block text-lg font-semibold mb-2 text-gray-700"
               >
                 Name
               </label>
               <input
                 type="text"
-                name="from_name"
-                id="from_name"
-                value={formData.from_name}
+                name="name"
+                id="name"
+                value={formData.name}
                 onChange={handleChange}
                 required
                 className="w-full p-3 border-b border-gray-400 focus:outline-none focus:ring-0 focus:border-[#D5BDAF] bg-transparent input-animate input-focus"
@@ -97,16 +112,16 @@ export default function Contact() {
             {/* Email Field */}
             <div className="relative animate-fadeInUp">
               <label
-                htmlFor="from_email"
+                htmlFor="email"
                 className="block text-lg font-semibold mb-2 text-gray-700"
               >
                 Email
               </label>
               <input
                 type="email"
-                name="from_email"
-                id="from_email"
-                value={formData.from_email}
+                name="email"
+                id="email"
+                value={formData.email}
                 onChange={handleChange}
                 required
                 className="w-full p-3 border-b border-gray-400 focus:outline-none focus:ring-0 focus:border-[#D5BDAF] bg-transparent input-animate input-focus"
@@ -154,9 +169,6 @@ export default function Contact() {
               ></textarea>
             </div>
 
-            {/* Status Message */}
-            {status && <p className="text-green-600 font-semibold">{status}</p>}
-
             {/* Submit Button */}
             <div className="flex justify-center animate-fadeInUp">
               <button
@@ -169,6 +181,9 @@ export default function Contact() {
           </form>
         </div>
       </div>
+
+      {/* Container pour Toastify */}
+      <ToastContainer />
     </div>
   );
 }
