@@ -83,7 +83,10 @@ function About() {
       <hr className="border-t-2 border-gray-300 my-6 w-1/2 mx-auto" />
 
       {/* Section Resume */}
-      <div ref={resumeRef}>
+      <div
+        ref={resumeRef}
+        className="min-h-screen flex flex-col items-center justify-center px-8 sm:px-20 bg-custom"
+      >
         <Resume />
       </div>
     </div>
