@@ -12,11 +12,11 @@ export default function Projects() {
           className="w-full h-120 object-cover blur-sm"
         />
         {/* Titre superposé sur l'image */}
-        <h1 className="pl-15 absolute top-1/2 left-4 transform -translate-y-1/2 text-8xl font-safira-march text-black">
+        <h1 className="pl-15 absolute top-1/2 left-4 transform -translate-y-1/2 text-8xl font-safira-march text-black animate-fadeInLeft">
           Projects
         </h1>
       </div>
-      <div className="mt-8 w-full flex justify-center font-montserrat">
+      <div className="mt-8 w-full flex justify-center font-montserrat animate-fadeInUp">
         <nav className="flex space-x-8">
           <a
             href="#project1"
