@@ -48,11 +48,16 @@ function About() {
           </div>
           <div className="flex justify-center sm:justify-end animate-fadeInLeft">
             <img
-              src="/imgs/profile.png"
+              src="/imgs/profile.JPG"
               alt="Profile"
               className="w-96 h-96 sm:w-[28rem] sm:h-[28rem] object-cover rounded-full"
             />
           </div>
+          <a href="/projects">
+            <button className="bg-[#D5BDAF] text-white px-4 py-2 p-6 rounded-md hover:bg-[#E3D5CA] font-montserrat">
+              View Projects
+            </button>
+          </a>
         </div>
 
         {/* Scroll Down Icon */}
@@ -85,7 +90,7 @@ function About() {
       {/* Section Resume */}
       <div
         ref={resumeRef}
-        className="min-h-screen flex flex-col items-center justify-center px-8 sm:px-20 bg-custom"
+        className="w-full flex flex-col items-center justify-center px-8 sm:px-20 bg-custom"
       >
         <Resume />
       </div>
