@@ -117,7 +117,6 @@ body {
 .bg-custom {
   overflow: hidden;
   position: relative;
-  height: 10vh;
 }
 .bg-home {
   opacity: 0.5;
