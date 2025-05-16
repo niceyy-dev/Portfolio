@@ -5,7 +5,7 @@ export default function Home() {
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-8 sm:p-20 bg-custom">
       <main className="flex flex-col gap-4 row-start-2 items-center sm:items-start font-safira-march px-8 sm:px-32 max-w-7xl mx-auto">
         <Image
-          src="/imgs/background-home.jpg"
+          src="/Portfolio/imgs/background-home.jpg"
           className="bg-home max-w-full"
           width={1920}
           height={1080}
