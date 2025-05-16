@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Projects() {
@@ -6,10 +7,12 @@ export default function Projects() {
     <div className="w-full bg-custom">
       <div className="relative w-full">
         {/* Image */}
-        <img
+        <Image
           src="/imgs/mac.jpg"
           alt="Project"
           className="w-full h-120 object-cover blur-sm"
+          width={1920}
+          height={1080}
         />
         {/* Titre superposé sur l'image */}
         <h1 className="pl-15 absolute top-1/2 left-4 transform -translate-y-1/2 text-8xl font-safira-march text-black animate-fadeInLeft">

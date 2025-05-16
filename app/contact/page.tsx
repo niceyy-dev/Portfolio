@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
 import emailjs from "@emailjs/browser";
 import { Bounce, ToastContainer, toast } from "react-toastify"; // Import de Toastify
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
@@ -11,7 +10,6 @@ export default function Contact() {
     subject: "",
     message: "",
   });
-  const router = useRouter();
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>

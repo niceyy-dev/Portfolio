@@ -1,10 +1,11 @@
 "use client";
 import React, { useRef } from "react";
 import Resume from "@/components/Resume";
+import Image from "next/image";
 
 function About() {
   // Utilisation de ref pour la section Resume
-  const resumeRef = useRef(null);
+  const resumeRef = useRef<HTMLDivElement>(null);
 
   const scrollToResume = () => {
     // Défilement fluide vers la section Resume
@@ -29,10 +30,15 @@ function About() {
           {/* Left: Text Content */}
           <div className="flex flex-col gap-6 text-lg leading-relaxed font-anonymous-regular font-content animate-fadeInUp">
             <p className="animate-fadeInUp">
-              I’m Anaïs, a web and blockchain developer with a passion for
+              {/* I’m Anaïs, a web and blockchain developer with a passion for
               crafting innovative, user-centric applications. I specialize in
               building scalable, responsive websites and decentralized
-              applications using modern technologies.
+              applications using modern technologies. */}
+              Hello, I&apos;m Anaïs — a freelance fullstack developer. I build
+              high-performance, modern websites and web applications for small
+              businesses and solo entrepreneurs. I do both the front-end and
+              back-end myself, so my clients get completed, ready-to-launch
+              solutions without the tech headache.
             </p>
             <p className="animate-fadeInUp">
               I am always looking to challenge myself with exciting projects.
@@ -41,15 +47,17 @@ function About() {
             constantly exploring new technologies and honing my skills.
             <p className="animate-fadeInUp">
               Currently based in Paris, I am open to freelance collaborations
-              and full-time opportunities where I can continue to grow and
-              contribute to the development community.
+              and opportunities where I can continue to grow and contribute to
+              the development community.
             </p>
-            <p> Let’s connect and bring your ideas to life!</p>
+            <p> Let&apos;s work together and make your idea happen!</p>
           </div>
           <div className="flex justify-center sm:justify-end animate-fadeInLeft">
-            <img
+            <Image
               src="/imgs/profile.JPG"
               alt="Profile"
+              width={400}
+              height={400}
               className="w-96 h-96 sm:w-[28rem] sm:h-[28rem] object-cover rounded-full"
             />
           </div>

@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className="flex flex-col h-screen justify-between">
         <Header className="font-copperplate-gothic-31-ab header-title " />
         <main className="flex-grow">{children}</main>
-        <Footer className="h-10" />
+        <Footer className="h-5" />
       </body>
     </html>
   );
