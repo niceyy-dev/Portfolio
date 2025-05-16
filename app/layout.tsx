@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Anais Zhang Portfolio",
+  title: "Anais.Z Portfolio",
   description: "Welcome to my portfolio! I am a web developer.",
   // icons: {
   //   icon: "/imgs/favicon.png",
