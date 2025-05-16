@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // important pour GitHub Pages
   },
-  // assetPrefix: "/Portfolio/",
-  // basePath: "/Portfolio",
+  basePath: "/Portfolio",
+  assetPrefix: "/Portfolio/",
   /* config options here */
 };
 
