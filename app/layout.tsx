@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "react-toastify/dist/ReactToastify.css";
 import "../next.config";
-import "/Portfolio/globals.css";
+import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
