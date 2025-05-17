@@ -2,38 +2,33 @@
 
 @font-face {
   font-family: "Copperplate Gothic 29 AB";
-  src: url("/Portfolio/fonts/Copperplate-Gothic-Std-29-AB.ttf")
-    format("truetype");
+  src: url("/fonts/Copperplate-Gothic-Std-29-AB.ttf") format("truetype");
 }
 @font-face {
   font-family: "Copperplate Gothic 31 BC";
-  src: url("/Portfolio/fonts/Copperplate-Gothic-Std-31-BC.woff2")
-    format("woff2");
+  src: url("/fonts/Copperplate-Gothic-Std-31-BC.woff2") format("woff2");
 }
 @font-face {
   font-family: "Copperplate Gothic 31 AB";
-  src: url("/Portfolio/fonts/Copperplate-Gothic-Std-31-AB.woff2")
-    format("woff2");
+  src: url("/fonts/Copperplate-Gothic-Std-31-AB.woff2") format("woff2");
 }
 @font-face {
   font-family: "Copperplate Gothic 32 BC";
-  src: url("/Portfolio/fonts/Copperplate-Gothic-Std-32-BC.ttf")
-    format("truetype");
+  src: url("/fonts/Copperplate-Gothic-Std-32-BC.ttf") format("truetype");
 }
 @font-face {
   font-family: "Copperplate Gothic 33 BC";
-  src: url("/Portfolio/fonts/Copperplate-Gothic-Std-33-BC.ttf")
-    format("truetype");
+  src: url("/fonts/Copperplate-Gothic-Std-33-BC.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Safira March";
-  src: url("/Portfolio/fonts/Safira-March.woff2") format("woff2");
+  src: url("/fonts/Safira-March.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Anonymous Pro Regular";
-  src: url("/Portfolio/fonts/AnonymousPro-Regular.ttf") format("truetype");
+  src: url("/fonts/AnonymousPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -41,27 +36,27 @@
 /* Define Anonymous Pro Bold */
 @font-face {
   font-family: "Anonymous Pro Bold";
-  src: url("/Portfolio/fonts/AnonymousPro-Bold.ttf") format("truetype");
+  src: url("/fonts/AnonymousPro-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: "Anonymous Pro Bold Italic";
-  src: url("/Portfolio/fonts/AnonymousPro-BoldItalic.ttf") format("truetype");
+  src: url("/fonts/AnonymousPro-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Anonymous Pro Italic";
-  src: url("/Portfolio/fonts/AnonymousPro-Italic.ttf") format("truetype");
+  src: url("/fonts/AnonymousPro-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Montserrat Regular";
-  src: url("/Portfolio/fonts/Montserrat-Regular.ttf") format("truetype");
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: normal;
 }
 .font-copperplate-gothic-31-ab {
@@ -122,6 +117,7 @@ body {
 .bg-custom {
   overflow: hidden;
   position: relative;
+  height: 100vh;
 }
 .bg-home {
   opacity: 0.5;

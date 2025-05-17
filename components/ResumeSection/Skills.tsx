@@ -20,35 +20,35 @@ export default function Skills() {
             <ul className="list-disc pl-5 flex flex-wrap gap-4 items-center">
               <li className="flex items-center gap-2">
                 <Image
-                  src="/Portfolio/imgs/typescript.png"
+                  src="/imgs/typescript.png"
                   alt="TypeScript"
                   className="h-10 w-10 m-2"
                   width={40}
                   height={40}
                 />
                 <Image
-                  src="/Portfolio/imgs/javascript.png"
+                  src="/imgs/javascript.png"
                   alt="JavaScript"
                   className="h-10 w-10 m-2"
                   width={40}
                   height={40}
                 />
                 <Image
-                  src="/Portfolio/imgs/react.png"
+                  src="/imgs/react.png"
                   alt=""
                   className="h-11 w-10 m-2"
                   width={40}
                   height={40}
                 />
                 <Image
-                  src="/Portfolio/imgs/node.png"
+                  src="/imgs/node.png"
                   alt=""
                   className="h-12 w-16 m-2"
                   width={40}
                   height={40}
                 />
                 <Image
-                  src="/Portfolio/imgs/php.png"
+                  src="/imgs/php.png"
                   alt=""
                   className="h-12 w-12 m-2"
                   width={40}
@@ -67,7 +67,7 @@ export default function Skills() {
               <li className="flex items-center gap-2">
                 <div className="flex flex-col items-center">
                   <Image
-                    src="/Portfolio/imgs/solidity.svg"
+                    src="/imgs/solidity.svg"
                     alt=""
                     className="h-10 w-10 m-3"
                     width={40}
@@ -76,7 +76,7 @@ export default function Skills() {
                   <span className="text-xs text-gray-700">Solidity</span>
                 </div>
                 <Image
-                  src="/Portfolio/imgs/ipfs.png"
+                  src="/imgs/ipfs.png"
                   alt=""
                   className="h-10 w-10 m-3"
                   width={40}
