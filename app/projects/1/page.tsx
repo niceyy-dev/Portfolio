@@ -97,7 +97,7 @@ export default function ProjectShowcase() {
                 transition={{ delay: 0.6 }}
               >
                 <a
-                  href="https://fast-brushlands-29022-d905e5c7ddb6.herokuapp.com/"
+                  href="https://restaurant-sichuan.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -305,13 +305,6 @@ export default function ProjectShowcase() {
                     playsInline
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   />
-                  {/* <Video
-                    src="/imgs/projects/1/preview.png"
-                    alt="Main preview"
-                    width={1600}
-                    height={1000}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                  /> */}
                 </div>
 
                 {/* Image secondaire */}
